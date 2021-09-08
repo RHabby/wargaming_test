@@ -1,0 +1,12 @@
+<div style="margin: 20px 0 10px 0;">
+    <form class="row row-cols-lg-auto g-3 align-items-center" action="{{ url_for('base.upload_file') }}" method="POST"
+        enctype="multipart/form-data">
+        {{ form.csrf_token }}
+        <div class="col-12" style="margin: 10px 0;">
+            {{ form.file(class_="form-control") }}
+        </div>
+        <div class="col-12" style="margin: 10px 0;">
+            {{ form.submit(class_="btn btn-primary") }}
+        </div>
+    </form>
+</div>

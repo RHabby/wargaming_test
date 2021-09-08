@@ -1,0 +1,18 @@
+<table class="table table-sm">
+    <thead>
+        <tr>
+            <th scope="col">Слово</th>
+            <th scope="col">TF</th>
+            <th scope="col">IDF</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for stat in stats %}
+        <tr>
+            <th scope="row">{{ stat.word }}</th>
+            <td>{{ stat.tf }}</td>
+            <td>{{ stat.idf }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

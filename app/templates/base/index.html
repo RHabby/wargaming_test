@@ -1,0 +1,12 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+
+{% include "base/navbar.html" %}
+{% include "base/flash_messages.html" %}
+{% include "base/file_upload_form.html" %}
+
+{% if stats %}
+{% include "base/tf_idf_table.html" %}
+{% endif %}
+
+{% endblock content %}
